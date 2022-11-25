@@ -106,6 +106,8 @@ else ()
     set (BUILD_DOCS OFF)
 endif ()
 
+set(CMAKE_POLICY_DEFAULT_CMP0077 NEW)
+
 option (WITH_CURL "Build with cURL propagation" WITH_CURL)
 option (WITH_GRPC "Build with gRPC propagation" WITH_GRPC)
 option (WITH_FPIC "Build with -fPIC for shared library" OFF)
@@ -213,6 +215,6 @@ message (STATUS "Link with ${zipkin_DEPENDENCIES}")
 
 add_subdirectory(docs)
 add_subdirectory(src)
-add_subdirectory(test)
-add_subdirectory(bench)
-add_subdirectory(examples)
+#add_subdirectory(test)
+#add_subdirectory(bench)
+#add_subdirectory(examples)
