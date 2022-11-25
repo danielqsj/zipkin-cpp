@@ -346,7 +346,7 @@ if(NOT (${GMOCK_LIBRARY_EXISTS} AND ${GTEST_LIBRARY_EXISTS}))
             externalproject_add(
                 gmock
                 GIT_REPOSITORY "https://github.com/google/googletest.git"
-                GIT_TAG "release-${GMOCK_VER}"
+                GIT_TAG "release-1.8.0"
                 PREFIX ${GMOCK_ROOT}
                 INSTALL_COMMAND ""
                 LOG_DOWNLOAD ON
